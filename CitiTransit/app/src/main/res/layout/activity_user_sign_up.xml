@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.citi.cititransit.UserSignUpActivity">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="New User"
+            android:textSize="25dp"
+            android:fontFamily="@string/"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/grey"/>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:background="#62A2EE"
+            android:textColor="@color/white"
+            android:layout_width="190dp"
+            android:layout_height="35dp"
+            android:layout_margin="25dp"
+            android:layout_gravity="center"
+            android:text="Sign up"
+            android:shadowColor="@color/grey"/>
+
+
+        <TextView
+            android:text="@string/old_user_sign_in"
+            android:id="@+id/oldUserSignIn"
+            android:textAlignment="center"
+            android:layout_marginLeft="54dp"
+            android:layout_marginRight="54dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
